@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
    
@@ -27,7 +27,7 @@ jobs:
       run: |
         pip install pytest
 
-    # Run the tests
+        
     - name: Run tests
       run: |
         pytest test_scientific_calculator.py
